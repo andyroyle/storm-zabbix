@@ -81,7 +81,7 @@ def process_latency(b):
   return parse_float(b, 'processLatency')
 
 def print_topology_count(topologies, host):
-  print '%s storm.topolgies %i' % (host, len(topologies))
+  print '%s storm.topologies %i' % (host, len(topologies))
 
 def print_capacity(bolts, host):
   print '%s storm.capacity %f' % (host, sorted(list(map(capacity, bolts)))[-1])
